@@ -5,8 +5,6 @@ function viewRemoveTodoList() {
 
   $numberTodo = (int)$numberTodo;
   if (!empty($numberTodo) && is_numeric($numberTodo)) {
-    var_dump($numberTodo);
-
     if (removeTodoList($numberTodo)) {
       echo "Todo nomor " . $numberTodo . " berhasil dihapus." . PHP_EOL;
       
